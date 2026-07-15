@@ -1,0 +1,159 @@
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+
+
+
+a = "\r\n\r\n\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************\r\nCisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#"
+
+
+a
+"\r\n\r\n\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************\r\nCisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#"
+
+
+
+
+
+
+
+
+a.split('****')
+['\r\n\r\n\r\n', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', "**\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n", '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '**\r\nCisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#']
+
+
+
+a = "\r\n\r\n\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************\r\nCisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#"
+
+
+a = "\r\n\r\n\r\n**************************************************************************\r\n* IOSv is strictly limited to use for evaluation, demonstration and IOS  *\r\n* education. IOSv is provided as-is and is not supported by Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************\r\nCisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#"
+
+
+start = a.find("Cisco")
+
+output = a[start:]
+output
+"Cisco's      *\r\n* Technical Advisory Center. Any use or disclosure, in whole or in part, *\r\n* of the IOSv Software or Documentation to any third party for any       *\r\n* purposes is expressly prohibited except as otherwise authorized by     *\r\n* Cisco in writing.                                                      *\r\n**************************************************************************\r\nCisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#"
+
+
+
+start = a.find("Cisco-R")
+output = a[start:]
+
+output
+'Cisco-R2#enable\r\nCisco-R2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+
+
+
+start
+614
+
+
+
+data = b'2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+
+
+data
+b'2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+
+
+data.split('\r\n')
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    data.split('\r\n')
+TypeError: a bytes-like object is required, not 'str'
+data.split('r\n')
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    data.split('r\n')
+TypeError: a bytes-like object is required, not 'str'
+a = data.split('r\n')
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    a = data.split('r\n')
+TypeError: a bytes-like object is required, not 'str'
+
+
+data
+b'2#terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+type(data)
+<class 'bytes'>
+
+
+str(data)
+"b'2#terminal length 0\\r\\nCisco-R2#\\r\\nCisco-R2#config terminal\\r\\nEnter configuration commands, one per line.  End with CNTL/Z.\\r\\nCisco-R2(config)#exit\\r\\nCisco-R2#sh ip int brief\\r\\nInterface                  IP-Address      OK? Method Status                Protocol\\r\\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \\r\\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \\r\\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \\r\\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \\r\\nLoopback0                  2.2.2.2         YES manual up                    up      \\r\\nCisco-R2#'"
+
+
+data.split(\r\n)
+SyntaxError: unexpected character after line continuation character
+data.split('\r\n')
+Traceback (most recent call last):
+  File "<pyshell#62>", line 1, in <module>
+    data.split('\r\n')
+TypeError: a bytes-like object is required, not 'str'
+data.split('\r\n')
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    data.split('\r\n')
+TypeError: a bytes-like object is required, not 'str'
+
+
+type(data)
+<class 'bytes'>
+
+
+
+
+data = #terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+SyntaxError: invalid syntax
+
+
+data = "terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+"
+SyntaxError: unterminated string literal (detected at line 1)
+
+data = "terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'
+"
+SyntaxError: unterminated string literal (detected at line 1)
+data ="terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'"
+
+
+data
+"terminal length 0\r\nCisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'"
+
+
+type(data)
+<class 'str'>
+
+
+data.split('\r\n')
+['terminal length 0', 'Cisco-R2#', 'Cisco-R2#config terminal', 'Enter configuration commands, one per line.  End with CNTL/Z.', 'Cisco-R2(config)#exit', 'Cisco-R2#sh ip int brief', 'Interface                  IP-Address      OK? Method Status                Protocol', 'GigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      ', 'GigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    ', 'GigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    ', 'GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    ', 'Loopback0                  2.2.2.2         YES manual up                    up      ', "Cisco-R2#'"]
+
+
+start = data.find("Cisco-R")
+start
+19
+
+
+>>> ouput = data[start:]
+>>> ouput
+"Cisco-R2#\r\nCisco-R2#config terminal\r\nEnter configuration commands, one per line.  End with CNTL/Z.\r\nCisco-R2(config)#exit\r\nCisco-R2#sh ip int brief\r\nInterface                  IP-Address      OK? Method Status                Protocol\r\nGigabitEthernet0/0         192.168.153.13  YES NVRAM  up                    up      \r\nGigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    \r\nGigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    \r\nLoopback0                  2.2.2.2         YES manual up                    up      \r\nCisco-R2#'"
+>>> 
+>>> 
+>>> ip = re.findall(r"\d\d\.\d\d.\d\d\.\d\d",ouput)
+Traceback (most recent call last):
+  File "<pyshell#96>", line 1, in <module>
+    ip = re.findall(r"\d\d\.\d\d.\d\d\.\d\d",ouput)
+NameError: name 're' is not defined. Did you forget to import 're'?
+>>> 
+>>> import re
+>>> 
+>>> ip = re.findall(r"\d\d\.\d\d.\d\d\.\d\d",ouput)
+>>> ip
+[]
+>>> ip = re.findall(r"[0-9]{1,3}\.[0-9]{0,3}\.[0-9]{0,3}\.[0-9]{0,3}",ouput)
+>>> ip
+['192.168.153.13', '2.2.2.2']
+>>> ip = re.findall(r"[0-9]{1}\.[0-9]{1}\.[0-9]{1}\.[0-9]{1}",ouput)
+>>> ip
+['2.2.2.2']
+>>> 
+>>> 
