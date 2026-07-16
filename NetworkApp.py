@@ -26,8 +26,8 @@ except KeyboardInterrupt:
 #step4: Creating the threads for one or multiple SSH connections
 
 #Using while True infinite loop to keep the program alive and running until the user stops by pressing cntrl+c
-while True:              
+           
     create_threads(ip_list,ssh_connection)
-    time.sleep(3)
+ 
 
 #End of program
