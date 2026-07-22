@@ -1,1 +1,7 @@
-show ip int brief
+conf t
+int loop0
+ip add 1.1.1.1 255.0.0.0
+int loop1
+ip add 2.2.2.2 255.0.0.0
+end
+sh ip int brief

@@ -24,5 +24,5 @@ except KeyboardInterrupt:
     print("\n\n Program aborted by user.. Exiting ....")
 
 #step4: Creating the threads for one or multiple SSH connections
-    create_threads(ip_list,ssh_connection)
+create_threads(ip_list,ssh_connection)
 #End of program

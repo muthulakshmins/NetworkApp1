@@ -4,10 +4,11 @@
 #Section3: SSH connection function that performs connecting to device, sending the commands and storing output
 
 import paramiko
-import os.path
+import os
 import time
 import sys
 import re
+from datetime import datetime
 
 #Section1:
 #step1: Prompt user for input - USERNAME and PASSWORD file
@@ -103,9 +104,9 @@ def ssh_connection(ip):
         selected_cmd_file.close()
         
         #Checking for command output for IOS syntax errors using regular expression
-        router_output = connection.recv(65535)
+        router_output = connection.recv(65535).decode('utf-8')
         
-        if re.search(b'Invalid input',router_output):
+        if re.search('Invalid input',router_output):
             print("There is atleast one IOS syntax error on device {}".format(ip))
         
         else:
@@ -113,16 +114,31 @@ def ssh_connection(ip):
 
         #Print the clean command output
         start = str(router_output).find('Cisco-R')    # To print output from hostname Cisco-R
+        #output = router_output.replace("\r\n", "\n")
         output = router_output[start:]
-        #print(str(output) + '\n')  
-                
-        #Print the configured interface IPs in each device
-        #output = str(output).split('\r\n')            #split function takes str as input and returns a list i.e output
+           
+        os.makedirs("logs",exist_ok = True)
+        filename = f"logs\\{ip}.log"
+        filename = f"logs\\{ip.strip()}.log"
+        
+        with open(filename, 'w') as logfile:    #Overwrite the log file everytime we run the code
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            logfile.write("=" * 60 + "\n")
+            logfile.write(f"Time    : {timestamp}\n")
+            logfile.write(f"Device  : {ip.strip()}\n")
+            logfile.write("=" * 60 + "\n")
+            logfile.write(output)
+            logfile.write("\n\n")
+        
+        print(f'Output saved to file {filename}')
         
         ip = re.findall(r"[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}", str(output))  # we need to convert this output list into str to pass as arg in findall() function
         #print(f"The list of interface IP address :{ip}")
-        #print(f"The loopback address is {ip[1]}")
-        
+        loopback_ips = re.findall(r"(Loopback\d+)\s+(\d{1,3}(?:\.\d{1,3}){3})",output)
+        #print(loopback_ips)
+        for interface, ip in loopback_ips:
+            print(f"{interface} : {ip}")
+
         print("End of program :)")
         
         #Closing the connection

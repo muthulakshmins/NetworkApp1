@@ -1,0 +1,33 @@
+============================================================
+Time    : 2026-07-22 22:20:55
+Device  : 192.168.153.130
+============================================================
+Cisco-R1#enable
+Cisco-R1#terminal length 0
+Cisco-R1#
+Cisco-R1#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Cisco-R1(config)#exit
+Cisco-R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Cisco-R1(config)#
+Cisco-R1(config)#int loop0
+Cisco-R1(config-if)#
+Cisco-R1(config-if)#ip add 1.1.1.1 255.0.0.0
+Cisco-R1(config-if)#
+Cisco-R1(config-if)#int loop1
+Cisco-R1(config-if)#
+Cisco-R1(config-if)#ip add 2.2.2.2 255.0.0.0
+Cisco-R1(config-if)#
+Cisco-R1(config-if)#end
+Cisco-R1#
+Cisco-R1#sh ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0         192.168.153.130 YES NVRAM  up                    up      
+GigabitEthernet0/1         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/2         unassigned      YES NVRAM  administratively down down    
+GigabitEthernet0/3         unassigned      YES NVRAM  administratively down down    
+Loopback0                  1.1.1.1         YES manual up                    up      
+Loopback1                  2.2.2.2         YES manual up                    up      
+Cisco-R1#
+
